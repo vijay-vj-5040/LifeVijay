@@ -1,1 +1,59 @@
 
+<div class="login-page">
+    <div class="container-fluid">
+        <div class="row align-items-center">   
+            <div class="col-md-6">
+                <div class="image-left-bg">
+                
+                <h4 class="sologantext">                
+                    Together we all serve by faith, hope and<br> love but the greatest of these is love..​.
+                </h4>
+                <img src="../../assets/img/login_bg_img.png" alt="login-images" class="login-bg-img img-fluid">
+            </div>
+            </div>
+    
+         <div class="col-md-6">
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+             <div class="login-area">
+               <div class="login-logo text-center mb-4 pb-2"> <img src="../../assets/img/logo.png" class="logo"></div>
+                <h3 class="Login">
+                    Login
+                </h3>
+                 <div class="form-group"> 
+                    <label>Email</label>
+                    <input type="text" class="text-design form-control" formControlName="userName">
+                    <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+                        <div *ngIf="f.userName.errors.required">userName is required</div>
+                        <div *ngIf="f.userName.errors.email">Email must be a valid email address</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="text-design form-control" formControlName="passWord">
+                    <div *ngIf="submitted && f.passWord.errors" class="invalid-feedback">
+                        <div *ngIf="f.passWord.errors.required">Password is required</div>
+                        <div *ngIf="f.passWord.errors.minlength">Password must be at least 8 characters</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-check d-flex mb-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" value="Admin" class="checkbox-design" formControlName="rememberMe">
+                            <label class="form-check-label" for="exampleCheck1">Remeber Me</label>
+                          </div>
+                    </div>
+                    <div class="col-6 text-right">
+                              <a href="#" class="forgetpassword">Forgot your password?</a>
+                    </div>
+                </div>
+                <div class="mt-4">
+                <button type="submit" value="Login" class="login-btn btn">Login</button>             
+                </div>
+             </div>         
+         
+            </form>
+           </div>
+    
+        </div>
+    </div>
+    </div>
