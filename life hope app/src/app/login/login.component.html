@@ -1,0 +1,56 @@
+<div class="full-container">
+    <div class="row" style="background-color: gray;">   
+        <div class="col-md-6" style="
+        width: 1366px;
+        height: 778px;
+        overflow: hidden;
+        border-radius: 0 50% 0 0;
+        padding: 123px 0 0 38px;
+        background-image: linear-gradient(to right, #3e1853 -40%, #3e1853 -40%, #ad398c -40%, #ad398c -40%);">
+            <span class="sologantext">                
+                Together we all serve by faith, hope and<br> love but the greatest of these is love..​.
+               
+            </span>
+            <img src="../../assets/img/login_bg_img.png" alt="asjdg" class="login-bg-img"></div>
+
+     <div class="col-md-6">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+         <div class="login-area">
+            <img src="../../assets/img/logo.png"
+        
+            class="logo">
+            <div class="Login">
+                Login
+             </div>
+             <div>
+                <div class="Email">
+                    Email
+                </div>
+                <input type="text" class="text-design form-control" formControlName="userName">
+                <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+                    <div *ngIf="f.userName.errors.required">userName is required</div>
+                    <div *ngIf="f.userName.errors.email">Email must be a valid email address</div>
+                </div>
+            </div>
+            <div>
+                <div class="Email">
+                    Password
+                </div>
+                <input type="password" class="text-design form-control" formControlName="passWord">
+                <div *ngIf="submitted && f.passWord.errors" class="invalid-feedback">
+                    <div *ngIf="f.passWord.errors.required">Password is required</div>
+                    <div *ngIf="f.passWord.errors.minlength">Password must be at least 8 characters</div>
+                </div>
+            </div>
+            <input id="Checkbox1" name="Checkbox1" type="checkbox" value="Admin" class="checkbox-design" formControlName="rememberMe"/>
+            <label for="Checkbox1" class="remeberme">Remeber Me</label>
+            <a href="#" class="forgetpassword">Forgot your password?</a>
+
+            <button type="submit" value="Login" class="login-btn btn">Login</button>             
+         </div>         
+     
+        </form>
+       </div>
+
+    </div>
+</div>

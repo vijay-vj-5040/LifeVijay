@@ -1,0 +1,121 @@
+.tile{
+    width: 313px;
+    height: 140px;
+    margin: 29px 22px 18px 2px;
+    padding: 39px 60.6px 38px 61px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.comple-icon{
+    width: 50px;
+    height: 50px;
+    margin: 6px 39.4px 7px 0;
+    object-fit: contain;
+}
+
+.legend-label{
+    font-size: 15px;
+    font-weight: 800;
+    padding-left: 17px;
+}
+
+.legend-label-legend{
+    font-size: 15px;
+    font-weight: 800;
+    padding-left: 90px;
+}
+
+.legend-label-small{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.font-size{
+    font-size: 30px;
+}
+
+
+.font-size-small{
+    font-size: 20px;
+}
+.tile-small{
+    width: 205px;
+  height: 146px;
+  margin: 18px 18px 22px 4px;
+  padding: 17px 52px 17px 53px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.table-container{
+    width: 1248px;
+  height: 320px;
+  margin: 22px 21px 15px 27px;
+  padding: 13px 0 1px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+.recent{
+    width: 1248px;
+    height: 350px;
+    margin-top: 28px;   
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.chart-wrapper{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.table-header{
+  width: 204px;
+  height: 28px;
+  margin: 0 27px 13px 22px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+.mat-header-row{
+    width: 1248px;
+    height: 50px;
+    margin: 13px 0 12px;
+    padding: 13px 81px 14px 22px;
+    background-color: #2196f3;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+}
+
+.mat-row:nth-child(even){
+    background-color: #f4f4f4;
+    }
+
+.mat-row:nth-child(odd){
+    background-color: #ffffff;  
+    }
+
+    td.mat-cell{
+        border-bottom-style: none;
+    }
+    
+    th.mat-header-cell{
+        border-bottom-style: none;
+    }
+    .expandmenu{
+        width: 20px;
+        height: 20px;
+        margin: 15px 21px 17px 20px;
+        object-fit: contain;
+    }

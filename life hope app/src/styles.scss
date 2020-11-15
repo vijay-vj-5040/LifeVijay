@@ -1,0 +1,30 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Light.ttf);
+}
+* {
+font-family: "Poppins";
+}
+
+
+.text-design{
+    width: 363px;
+    height: 43px;
+    margin: 11px 0 22px;
+    border-radius: 10px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+}
+
+.checkbox-design{
+    width: 20px;
+    height: 20px;
+    margin: 13px 11px 55px 1px;
+    border-radius: 5px;
+    border: solid 1px #89878b;
+    background-color: #ffffff
+}

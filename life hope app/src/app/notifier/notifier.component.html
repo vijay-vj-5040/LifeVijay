@@ -1,0 +1,8 @@
+<p>notifier works!</p>
+
+<mat-chip-list class="" *ngIf="showChip">
+    <mat-chip *ngFor="let response of responseMsg; let i = index" selected [color]=response.color
+        [removable]="removable" (removed)="remove(i)">{{response.message}}
+    </mat-chip>
+
+</mat-chip-list>

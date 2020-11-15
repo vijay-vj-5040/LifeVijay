@@ -1,0 +1,140 @@
+<div class="row">
+    <div class="col-md-12">
+        <app-header-profile></app-header-profile>
+    </div>
+</div>
+
+
+<div class="row" style="background-color: #f4f4f4;">
+    <div class="col-md-2">
+        <app-left-menu></app-left-menu>
+    </div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4" style="padding-top:30px; padding-left: 0px!important;">
+                <div class="chart-wrapper">
+                    <canvas id="doughnut-chart" width="700" height="700"></canvas>
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tile">
+                            <img src="../../assets/img/completed-icon.png" class="comple-icon">
+                            <span class="legend-label font-size">{{completed}}</span><br>
+                            <span class="legend-label-legend">Completed</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tile">
+                            <img src="../../assets/img/approved-icon.png" class="comple-icon">
+                            <span class="legend-label font-size">{{approved}}</span><br>
+                            <span class="legend-label-legend">Approved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="tile-small">
+                            <img src="../../assets/img/inprogress.png" class="comple-icon">
+                            <span class="legend-label font-size-small">{{inprogress}}</span><br>
+                            <span class="legend-label-small">Inprogress</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tile-small">
+                            <img src="../../assets/img/pending.png" class="comple-icon">
+                            <span class="legend-label font-size-small">{{pending}}</span><br>
+                            <span class="legend-label-small">Pending</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tile-small">
+                            <img src="../../assets/img/rejected-icon.png" class="comple-icon">
+                            <span class="legend-label font-size-small">{{rejected}}</span><br>
+                            <span class="legend-label-small">Rejected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-1"></div>
+            <div class="col-md-11 recent">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <span class="table-header">Recent Order Queue</span>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="/order-list"><img src="../../assets/img/expand-icon.png" class="expandmenu"></a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" width="100%">
+
+                            
+
+                                <!-- Position Column -->
+                                <ng-container matColumnDef="orderId">
+                                    <th mat-header-cell *matHeaderCellDef> Order Id </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.orderId}} </td>
+                                </ng-container>
+
+                                <!-- Name Column -->
+                                <ng-container matColumnDef="name">
+                                    <th mat-header-cell *matHeaderCellDef> Patient Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.patientName}} </td>
+                                </ng-container>
+
+                                <!-- Weight Column -->
+                                <ng-container matColumnDef="age">
+                                    <th mat-header-cell *matHeaderCellDef> Age </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+                                </ng-container>
+
+                                <!-- Symbol Column -->
+                                <ng-container matColumnDef="sex">
+                                    <th mat-header-cell *matHeaderCellDef> Sex </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.sex}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="phoneno">
+                                    <th mat-header-cell *matHeaderCellDef> Phoneno </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="testDetails">
+                                    <th mat-header-cell *matHeaderCellDef> Test Details </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.testDetails}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="location">
+                                    <th mat-header-cell *matHeaderCellDef> Location </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.location}} </td>
+                                </ng-container>
+
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <app-footer></app-footer>
+            </div>
+        </div>
+    </div>
+</div>
